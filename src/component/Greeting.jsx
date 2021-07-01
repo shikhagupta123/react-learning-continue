@@ -8,7 +8,7 @@ function Greeting() {
     color: ""
   };
   if (gt < 12) {
-    k = "Good Mprning";
+    k = "Good Morning";
     cstyl.color = "red";
   } else if (gt <= 18) {
     k = "Good Afternoon";
@@ -17,7 +17,11 @@ function Greeting() {
     k = "Good Night";
     cstyl.color = "blue";
   }
-  return <h1 className="greeting" style={cstyl}>{k}</h1>;
+  return (
+    <h1 className="greeting" style={cstyl}>
+      {k}
+    </h1>
+  );
 }
 
 export default Greeting;
